@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh, my E!</title>
+    <meta name="description" content="Don't be trashy! Trash your EE responsibly." />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <!-- Google Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- model-viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link href="./src/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Page Container -->
+    <div class="w-screen h-screen bg-[#151414]">
+        <!-- Header -->
+        <div class="fixed top-0 z-50 w-full py-4 px-4 sm:px-24 md:px-42 lg:px-56 flex flex-row justify-between items-center">
+            <img class='w-8 sm:w-10 md:w-12 h-auto object-contain' src='./assets/icon-color.png' />
+            <button
+                class="h-10 rounded-xl px-4 py-2 text-white border border-[#2AB964] bg-[#2AB964]/25 hover:bg-[#2AB964]/75 cursor-pointer">About</button>
+        </div>
+
+        <!-- Hero Section Container -->
+        <div class="w-full pt-32 px-4 sm:px-24 md:px-42 lg:px-56">
+            <!-- Hero Section Content -->
+            <div class="flex flex-col md:flex-row space-x-0 md:space-x-2 space-y-2 md:space-y-0">
+                <!-- Left/Top Column -->
+                <div class="w-full md:w-2/3 flex flex-col justify-center items-center md:items-start">
+                    <img class='w-32 w-48 h-auto object-contain' src='./assets/logo-color.png' />
+                    <p class="text-3xl sm:text-5xl lg:text-6xl text-white font-bold">Don't be trashy!</p>
+                    <p class="text-2xl sm:text-4xl lg:text-4xl text-gray-400 font-light">Trash your EE<sup>*</sup> responsibly.</p>
+                    <p class="text-sm text-gray-600"><sup>*</sup>EE: Electrical & Electronic Waste</p>
+                </div>
+                <!-- Right/Bottom Column -->
+                <div class="w-full md:w-1/3 flex justify-center items-center bg-[#161616] rounded-xl py-8 px-2 lg:px-8">
+                    <model-viewer
+                    style="width: 100%;"
+                    src="./assets/GarbageBin.vox.gltf"
+                    ios-src=""
+                    alt=""
+                    camera-controls
+                    disable-zoom
+                    auto-rotate
+                    ar
+                  ></model-viewer>
+                </div>
+            </div>
+        </div>
+
+        <br /><br />
+
+        <!-- Footer -->
+        <div
+            class="w-full px-4 sm:px-24 md:px-42 lg:px-56 py-16 mt-auto flex flex-col sm:flex-row bg-[#222121] text-sm items-start">
+            <div class="w-full sm:w-1/2 flex flex-col space-y-6">
+                <img class='w-12 h-auto object-cover' src='./assets/icon-color.png' />
+                <div class="text-gray-400">Oh, My E! — © 2022. All rights (and lefts) reserved.<br />An outcome of the
+                    Innovation Management & Strategy T&U Seminar.<br />Srishti Manipal Institute of Art, Design, and
+                    Technology.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
